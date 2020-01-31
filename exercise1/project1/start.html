@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <meta charset='UTF-8'>
+  <title>Portfolio Homepage</title>
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="Heading">
+        <h1> List of articles</h1>
+        <div class="links">
+            <a href="About.html">About</a>
+            <a href="Contact.html">Contact</a>
+            <a href="Services.html">Services</a>
+            <a href="http://google.com">Google</a>
+        </div>
+        <h2><b> lorem ipsum dolor sit</b></h2>
+        <img src="images/pexels-photo-715995.jpeg" alt="Photo">
+        <p>Attributes are properties used to provide additional information about an element.The most common attributes include the id attribute, 
+        which identifies an element; the class attribute, which classifies an element; the src attribute, which specifies a source for embeddable 
+        content; and the href attribute, which provides a hyperlink reference to a linked resource.
+
+        Attributes are defined within the opening tag, after an element’s name. Generally attributes include a name and a value. The format
+        for these attributes consists of the attribute name followed by an equals sign and then a quoted attribute value. For example, 
+        an <a> element including an href attribute would look like the following:</p>
+        
+        <p>HTML documents are plain text documents saved with an .html file extension rather than a .txt file extension. To begin writing HTML, 
+        you first need a plain text editor that you are comfortable using. Sadly this does not include Microsoft Word or Pages, as those are
+        rich text editors. Two of the more popular plain text editors for writing HTML and CSS are Dreamweaver and Sublime Text. 
+        Free alternatives also include Notepad++ for Windows and TextWrangler for Mac.
+
+        All HTML documents have a required structure that includes the following declaration and elements: <!DOCTYPE html>, <html>, <head>, 
+        and <body>.The document type declaration, or <!DOCTYPE html>, informs web browsers which version of HTML is being used and is placed
+        at the very beginning of the HTML document. Because we’ll be using the latest version of HTML, our document type declaration is simply
+        <!DOCTYPE html>. Following the document type declaration, the <html> element signifies the beginning of the document.
+            
+        Inside the <html> element, the <head> element identifies the top of the document, including any metadata (accompanying information about 
+        the page). The content inside the <head> element is not displayed on the web page itself. Instead, it may include the document title 
+        (which is displayed on the title bar in the browser window), links to any external files, or any other beneficial metadata. 
+        All of the visible content within the web page will fall within the <body> element.
+        </p>
+
+        <h3><b> Getting to Know CSS</b> </h3>
+        <p> CSS is a complex language that packs quite a bit of power. It allows us to add layout and design to our pages, and it allows us to 
+            share those styles from element to element and page to page. Before we can unlock all of its features, though, there are a few aspects 
+            of the language we must fully understand.
+            First, it’s crucial to know exactly how styles are rendered. Specifically, we’ll need to know how different types of selectors work 
+            and how the order of those selectors can affect how our styles are rendered. We’ll also want to understand a few common property 
+            values that continually appear within CSS, particularly those that deal with color and length.
+            Let’s look under the hood of CSS to see exactly what is going on.
+        </p>
+            <p>We’ll begin breaking down exactly how styles are rendered by looking at what is known as the cascade and studying a few examples of
+                 the cascade in action. Within CSS, all styles cascade from the top of a style sheet to the bottom, allowing different styles to 
+                 be added or overwritten as the style sheet progresses.
+
+                For example, say we select all paragraph elements at the top of our style sheet and set their background color to orange and 
+                their font size to 24 pixels. Then towards the bottom of our style sheet, we select all paragraph elements again and set their 
+                background color to green, as seen here.
+            </p>
+
+        <h3> Calculating Specificity</h3>
+        <p>Every selector in CSS has a specificity weight. A selector’s specificity weight, along with its placement in the cascade, identifies 
+            how its styles will be rendered. In Lesson 1, “Building Your First Web Page,” we talked about three different types of selectors: 
+            the type, class, and ID selectors. Each of these selectors has a different specificity weight. The type selector has the lowest
+            specificity weight and holds a point value of 0-0-1. The class selector has a medium specificity weight and holds a point value of 
+            0-1-0. Lastly, the ID selector has a high specificity weight and holds a point value of 1-0-0. As we can see, specificity points are 
+            calculated using three columns. The first column counts ID selectors, the second column counts class selectors, and the third column
+            counts type selectors. What’s important to note here is that the ID selector has a higher specificity weight than the class selector, 
+            and the class selector has a higher specificity weight than the type selector. The specificity weights of different types of selectors 
+            are incredibly important to remember. At times styles may not appear on elements as intended, and chances are the specificity weights 
+            of our selectors are breaking the cascade, therefore our styles are not appearing properly.
+        </p>
+
+        <h3><b> Combining Selectors</b></h3>
+        <p>
+            When selectors are combined they should be read from right to left. The selector farthest to the right, directly before the opening 
+            curly bracket, is known as the key selector. The key selector identifies exactly which element the styles will be applied to. Any 
+            selector to the left of the key selector will serve as a prequalifier. The first combined selector above, .hotdog p, includes two 
+            selectors: a class and a type selector. These two selectors are separated by a single space. The key selector is a type selector 
+            targeting paragraph elements. And because this type selector is prequalified with a class selector of hotdog, the full combined 
+            selector will only select paragraph elements that reside within an element with a class attribute value of hotdog. The second selector 
+            e, .hotdog p.mustard, includes three selectors: two class selectors and one type selector. The only difference between the second selector 
+            and the first selector is the addition of the class selector of mustard to the end of the paragraph type selector. Because the new class 
+            selector, mustard, falls all the way to the right of the combined selector, it is the key selector, and all of the individual selectors 
+            coming before it are now prequalifiers.
+
+        </p>
+        <h3><b> Footer</b></h3>
+        <div class="footer">
+            <a href="http:facebook.com">Facebook</a>
+            <a href="http://instagram.com">Instagram</a>
+            <a href="http://twitter.com">Twitter</a>
+        </div>
+        <div class="button">
+            <button type="button">Mail Me</button>
+            <button type="button">Back To Top</button>
+
+        </div>
+    </div>
+
+</body>
